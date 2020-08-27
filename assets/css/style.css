@@ -55,6 +55,7 @@ main {
 .side-bar img {
   height: 150px;
   width: 100%;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -64,10 +65,17 @@ main {
   padding: 20px;
 }
 
-.card {
+.card-top {
   float: left;
-  width: 25%;
+  width: 50%;
   padding: 20px;
+  border: 1px dotted black;
+}
+.card-bottom {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  border: 1px dotted black;
 }
 
 .card-dark {
@@ -100,29 +108,19 @@ footer a {
 
 footer a:hover {
   color: black;
+}
 
 /*Media queries*/
 
 @media (max-width: 992px) {
-  main, nav {
+  main {
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .card {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .card {
+@media screen and (max-width: 992px) {
+  .card-top,
+  .card-bottom {
     width: 100%;
   }
-
-  .container {
-    max-width: 100%;
-    margin: auto;
-  }
-
 }
