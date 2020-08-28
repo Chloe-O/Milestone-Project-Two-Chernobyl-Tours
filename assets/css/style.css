@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -8,20 +8,20 @@ body {
 }
 
 .container {
-  padding-top: 10px;
-  padding-bottom: 10px;
   max-width: 70%;
   margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*Header*/
 
 header {
-  height: 200px;
-  padding: 30px;
+  padding: 60px;
   text-align: center;
-  background: cornflowerblue;
   color: #ffffff;
+  background-image: url(/assets/images/chernobyl-3711315_1920.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /*Main*/
@@ -31,58 +31,46 @@ main {
   flex-wrap: wrap;
 }
 
-/*Sidebar*/
+/*Nav*/
 
-.side-bar {
-  flex: 20%;
-  background-color: green;
-  padding: 20px;
+nav {
+  display: flex;
+  background-color: #000000;
+  position: sticky;
+  top: 0;
 }
 
-.side-bar a {
+nav a {
   text-decoration: none;
   color: #ffffff;
-  border-bottom: 1px solid #ffffff;
-  display: block;
-  padding: 3px 0;
+  font-size: 15px;
+  padding: 10px 10px;
 }
 
-.side-bar a:hover {
-  color: black;
-  background: blueviolet;
+nav a:hover {
+  background-color: #dddddd;
+  color: #000000;
 }
 
-.side-bar img {
-  height: 150px;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+/*Main container*/
 
 .main-content {
-  flex: 80%;
-  background-color: white;
+  background-color: #ffffff;
   padding: 20px;
+  justify-content: center;
 }
 
-.card-top {
-  float: left;
-  width: 50%;
-  padding: 20px;
-  border: 1px dotted black;
-}
-.card-bottom {
-  float: left;
-  width: 50%;
-  padding: 20px;
-  border: 1px dotted black;
+/*Cards*/
+
+.card {
+  flex: 50%;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 5px;
 }
 
-.card-dark {
-  background-color: #dddddd;
-}
-.card-light {
-  background-color: #f3f3f3;
+.card-text {
+  padding: 15px;
 }
 
 .card-image {
@@ -96,31 +84,58 @@ main {
 footer {
   padding: 15px;
   text-align: center;
-  background: pink;
+  background: #ffffff;
 }
 
 footer a {
-  color: #ffffff;
+  font-size: 20px;
+  color: #000000;
   padding: 0px 10px;
   text-decoration: none;
   text-align: center;
 }
 
 footer a:hover {
-  color: black;
+  color: #999999;
 }
 
 /*Media queries*/
 
+/*Cards stack and border shows under each card*/
+/*Removes images from cards on small screens*/
+@media screen and (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+
+  .card-image {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+/*Stacks nav bar and main content*/
 @media (max-width: 992px) {
   main {
     flex-direction: column;
   }
+
+  nav {
+    flex-direction: column;
+    position: static;
+  }
+
+  nav a {
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 992px) {
-  .card-top,
-  .card-bottom {
-    width: 100%;
+/* Fills vp on anything smaller than 110px/large desktop */
+@media screen and (max-width: 1100px) {
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: 100%;
+    margin: auto;
   }
 }

@@ -5,3 +5,4 @@ W3schools > Flexbox https://www.w3schools.com/
 Codepen > Flexbox https://codepen.io/
 Font Awesome
 Google Fonts
+Stack Overflow https://stackoverflow.com/ re. flex item width query
