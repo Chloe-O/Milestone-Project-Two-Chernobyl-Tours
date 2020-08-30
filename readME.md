@@ -6,3 +6,4 @@ Codepen > Flexbox https://codepen.io/
 Font Awesome
 Google Fonts
 Stack Overflow https://stackoverflow.com/ re. flex item width query
+Tim @ Code Institute for info regarding CSS Grid
