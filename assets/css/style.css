@@ -99,6 +99,14 @@ footer a:hover {
   color: #999999;
 }
 
+/*Map*/
+
+div#map {
+  min-height: 600px;
+  margin: 45px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /*Media queries*/
 
 /*Cards stack and border shows under each card*/
@@ -130,7 +138,7 @@ footer a:hover {
   }
 }
 
-/* Fills vp on anything smaller than 110px/large desktop */
+/* Fills viewport on anything smaller than 110px/large desktop */
 @media screen and (max-width: 1100px) {
   .container {
     padding-top: 0;

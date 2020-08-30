@@ -118,11 +118,9 @@
             </div>
           </div>
         </div>
-
-        <div id="map">
-          <p>Map section</p>
-        </div>
       </main>
+
+      <div id="map"></div>
       <footer>
         <a href="https://www.instagram.com/" target="_blank"
           ><i class="fab fa-instagram"></i
@@ -139,7 +137,20 @@
       </footer>
     </div>
     <script>
-      var APIKEY = "AIzaSyDXRqYn-8IGQ6QqnfImQIQVLrD4AYvzSIg";
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 3,
+          center: {
+            lat: 51.394626,
+            lng: 30.07513,
+          },
+        });
+      }
     </script>
+    <script src="https://unpkg.com/@google/markerclustererplus@5.1.0/dist/markerclustererplus.min.js"></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXRqYn-8IGQ6QqnfImQIQVLrD4AYvzSIg&callback=initMap"
+    ></script>
   </body>
 </html>
