@@ -24,6 +24,13 @@ header {
   background-attachment: fixed;
 }
 
+.tag-line {
+  background-color: #000;
+  width: 250px;
+  margin: auto;
+  padding: 2px 0 2px 0;
+}
+
 /*Main*/
 
 /*Nav*/
@@ -80,6 +87,12 @@ nav a:hover {
 
 /*Map*/
 
+div#map {
+  min-height: 600px;
+  margin: 45px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /*Footer*/
 
 footer {
@@ -98,14 +111,6 @@ footer a {
 
 footer a:hover {
   color: #999999;
-}
-
-/*Map*/
-
-div#map {
-  min-height: 600px;
-  margin: 45px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*Media queries*/
