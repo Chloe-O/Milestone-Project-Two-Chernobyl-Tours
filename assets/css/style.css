@@ -61,6 +61,7 @@ nav a:hover {
   background-color: #ffffff;
   padding: 20px;
   justify-content: center;
+  margin: auto;
 }
 
 /*Cards*/
@@ -115,17 +116,26 @@ footer a:hover {
 }
 
 /*Form*/
-
-.contact-form {
-  
-}
+/*w3schools tutorial used for help formatting a form using only CSS*/
 
 input[type="text"],
+input[type="email"],
+select,
 textarea {
-  width: 100%;
+  width: 60%;
   padding: 10px;
+  margin: 10px 0;
   box-sizing: border-box;
+  display: block;
 }
+
+input[type="submit"] {
+padding: 3px 10px;
+font-size: 15px;
+margin-top: 10px;
+cursor: pointer;
+}
+
 
 /*Media queries*/
 
@@ -170,6 +180,12 @@ textarea {
     margin: 5px 10px 20px 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+
 }
 
 /* Fills viewport on anything smaller than 110px/large desktop */
