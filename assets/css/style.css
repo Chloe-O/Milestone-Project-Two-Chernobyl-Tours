@@ -114,6 +114,19 @@ footer a:hover {
   color: #999999;
 }
 
+/*Form*/
+
+.contact-form {
+  
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 /*Media queries*/
 
 /*Cards stack and border shows under each card*/
