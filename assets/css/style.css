@@ -120,7 +120,6 @@ footer a:hover {
 
 input[type="text"],
 input[type="email"],
-select,
 textarea {
   width: 60%;
   padding: 10px;

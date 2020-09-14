@@ -14,6 +14,17 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_9AQCkqhmimR1eVWv1ISKf");
+        emailjs.send("0happysoup0@gmail.com", "template_yvvj9ks");
+      })();
+    </script>
+
     <title>Document</title>
   </head>
 
@@ -38,7 +49,7 @@
 
       <main>
         <div class="main-content">
-          <form action="">
+          <form onsubmit="return sendMail(this);">
             <label for="name">Name</label>
             <input
               type="text"
@@ -50,7 +61,7 @@
             <input
               type="text"
               name="contact-number"
-              id="contact-number"
+              id="contactnumber"
               placeholder="Your Contact Number"
             />
             <br />
@@ -58,22 +69,13 @@
             <input
               type="email"
               name="email-address"
-              id="email-address"
+              id="emailaddress"
               placeholder="Your Email Address"
             />
-            <label for="group-size">Group Size</label>
-            <select name="group-size" id="group-size">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5+">5+</option>
-            </select>
-            <br />
             <label for="query">Booking Enquiry</label>
             <textarea
               name="query"
-              id="query"
+              id="yourquery"
               placeholder="Your query..."
             ></textarea>
 
@@ -97,5 +99,6 @@
         ></a>
       </footer>
     </div>
+    <script src="/js/sendEmail.js"></script>
   </body>
 </html>
