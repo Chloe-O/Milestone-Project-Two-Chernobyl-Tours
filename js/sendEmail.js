@@ -9,14 +9,11 @@ function sendMail(contactForm) {
     .then(
       function (response) {
         console.log("Success", response);
+        alert("Your query has been received, we will be in touch shortly.");
       },
       function (error) {
         console.log("Failed", error);
       }
     );
   return false;
-}
-
-function submitButton() {
-  alert("Your query has been received, we will be in touch shortly.");
 }
