@@ -25,7 +25,7 @@
       })();
     </script>
 
-    <title>Document</title>
+    <title>Contact Us | Chernobyl Tours</title>
   </head>
 
   <body>
@@ -56,6 +56,7 @@
               name="visitorname"
               id="name"
               placeholder="Your Name"
+              required
             /><br />
             <label for="contact-number">Contact Number</label>
             <input
@@ -71,15 +72,17 @@
               name="email-address"
               id="emailaddress"
               placeholder="Your Email Address"
+              required
             />
             <label for="query">Booking Enquiry</label>
             <textarea
               name="query"
               id="yourquery"
               placeholder="Your query..."
+              required
             ></textarea>
 
-            <input type="submit" value="Submit" />
+            <input onclick="submitButton()" type="submit" value="Submit" />
           </form>
         </div>
       </main>

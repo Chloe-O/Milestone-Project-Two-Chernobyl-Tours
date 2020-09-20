@@ -4,7 +4,7 @@ function initMap() {
         center: { lat: 51.394626, lng: 30.07513 },
     });
 
-    var labels = "ABCD";
+    var labels = "1234";
     var locations = [
         { lat: 51.389435, lng: 30.099635 },
         /*Reactor 4*/

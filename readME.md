@@ -6,6 +6,7 @@ Codepen > CSS Flexbox https://codepen.io/
 Font Awesome
 Google Fonts
 Tim @ Code Institute for info regarding CSS Grid
+Wikipedia > Further information regarding Chernobyl and Pripyat
 
 Issues to mention / overcome :
 

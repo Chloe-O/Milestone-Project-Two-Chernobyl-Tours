@@ -16,3 +16,7 @@ function sendMail(contactForm) {
     );
   return false;
 }
+
+function submitButton() {
+  alert("Your query has been received, we will be in touch shortly.");
+}
