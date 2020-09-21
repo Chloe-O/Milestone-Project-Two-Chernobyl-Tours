@@ -141,16 +141,23 @@ cursor: pointer;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
   border: 1px solid #999999;
   border-radius: 3px;
   z-index: 10;
   width: 500px;
   max-width: 80%;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .modal-header {
-  padding: 10px 15px;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -163,7 +170,26 @@ cursor: pointer;
   outline: none;
   background: none;
   font-weight: bold;
+  font-size: 20px;
 }
+
+/*Modal overlay*/
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 
 /*Modal video*/
 
