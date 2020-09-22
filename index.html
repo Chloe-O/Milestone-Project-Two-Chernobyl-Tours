@@ -80,7 +80,7 @@
                   carrying out the decommissioning of the plant since 2000 which
                   is planned to continue until 2065.
                 </p>
-                <button data-modal-target="#modal">Find out more</button>
+                <button id="cardBtn">Find out more</button>
               </div>
             </div>
             <div class="card">
@@ -161,6 +161,8 @@
     <div class="modal" id="myModal">
       <div class="modal-head">
         <span class="close">&times;</span>
+        <br />
+        <!--Floating the close button to the right made it overlap with the iframe, I was unsure how to resolve this so used br as a fix-->
       </div>
       <div class="modal-content">
         <div class="modal-video">
@@ -181,6 +183,7 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXRqYn-8IGQ6QqnfImQIQVLrD4AYvzSIg&callback=initMap"
     ></script>
+    <script src="/js/modals.js"></script>
     <script src="/js/map.js"></script>
   </body>
 </html>
