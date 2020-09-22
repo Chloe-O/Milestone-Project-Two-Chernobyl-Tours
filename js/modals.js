@@ -1,6 +1,6 @@
 let modal = document.getElementById("myModal");
 let modalOverlay = document.getElementById("modal-overlay");
-let cardButton = document.getElementById("cardBtn");
+let cardButton = document.getElementById("reactorButton");
 let span = document.getElementsByClassName("close")[0];
 
 cardButton.onclick = function () {

@@ -2,14 +2,15 @@ DCode Youtube channel > Navigation bar tutorial https://www.youtube.com/channel/
 Pixabay > Stock images https://pixabay.com/
 Freelogodesign > logo for site https://www.freelogodesign.org/
 W3schools > CSS Grid https://www.w3schools.com/
-Codepen > CSS Flexbox https://codepen.io/
 Font Awesome
 Google Fonts
 Tim @ Code Institute for info regarding CSS Grid
 Wikipedia > Further information regarding Chernobyl and Pripyat
 Weddev Simplified > https://www.youtube.com/watch?v=MBaw_6cPmAw
+Paper Crane > https://www.youtube.com/watch?v=X4t0JxiBeO0&t=239s
 
 Issues to mention / overcome :
 
 - When scrolling on index page, the Google map window would overlap the navbar. To resolve this, I added the Z-index property to the navbar so it appears in front of all the other elements on the page.
 - When opening the contact page, I found that the JS for the form submission was triggered as soon as the DOM loaded(and subsequently sending an empty email to my linked email.js account). However, an email was also sent when the form was completed and filled out.
+- Was unable to get the 'x' button on the modal to align correctly
