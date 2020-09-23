@@ -10,6 +10,7 @@ function sendMail(contactForm) {
       function (response) {
         console.log("Success", response);
         confirm("Your query has been received, we will be in touch shortly.");
+        window.location.reload();
       },
       function (error) {
         console.log("Failed", error);
