@@ -301,9 +301,6 @@ display: none;
     border: 1px solid #999999;
     border-radius: 5px;
 }
-
-
-
 /* Fills viewport on anything smaller than 1100px/large desktop */
 @media screen and (max-width: 1100px) {
   .container {
