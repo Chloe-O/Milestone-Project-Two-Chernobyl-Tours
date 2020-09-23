@@ -61,7 +61,7 @@ nav a:hover {
   background-color: #ffffff;
   padding: 20px;
   justify-content: center;
-  margin: auto;
+  
 }
 
 /*Cards*/
@@ -87,6 +87,10 @@ nav a:hover {
   width: 100%;
   height: 250px;
   object-fit: cover;
+}
+
+button {
+  cursor: pointer;
 }
 
 /*Map*/
@@ -120,9 +124,9 @@ footer a:hover {
 /*Form*/
 /*w3schools tutorial used for help formatting a form using only CSS*/
 
-form {
-  margin: 0 auto;
+.form {
   width: 80%;
+  margin: 0 auto;
 }
 
 input[type="text"],
@@ -150,12 +154,11 @@ cursor: pointer;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 3;
   background-color: white;
   width: 50%;
   max-width: 80%;
-  border: 1px solid #999999;
-  border-radius: 5px;
+ 
 }
 
 .modal-content {
@@ -202,6 +205,7 @@ display: none;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   transition: 400ms ease-in-out;
+  z-index: 2;
 }
 
 
@@ -228,7 +232,7 @@ display: none;
   }
 }
 
-/*Stacks nav bar and main content*/
+/*Stacks nav bar and main content, form width changes to 100% and video modal takes up 80% width*/
 @media (max-width: 992px) {
   main {
     flex-direction: column;
@@ -253,16 +257,24 @@ input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
-
 }
 
-.modal-content {
-  background-color: #fff;
-  margin: auto;
-  padding: 5px;
+.modal {
+display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background-color: white;
+    width: 80%;
+    border: 1px solid #999999;
+    border-radius: 5px;
 }
 
-/* Fills viewport on anything smaller than 110px/large desktop */
+
+
+/* Fills viewport on anything smaller than 1100px/large desktop */
 @media screen and (max-width: 1100px) {
   .container {
     padding-top: 0;
