@@ -1,6 +1,6 @@
 /*Reactor 4*/
 
-let reactorModal = document.getElementById("vidModal");
+let reactorModal = document.getElementById("reactorModal");
 let modalOverlay = document.getElementById("modal-overlay");
 let cardButton = document.getElementById("reactorButton");
 let span = document.getElementsByClassName("close")[0];
@@ -36,7 +36,14 @@ dugaButton.onclick = function () {
 /*Red forest*/
 
 let forestButton = document.getElementById("forestButton");
+let forestModal = document.getElementById("forestModal");
 
-forestButton.onclick = function() {
-    window.open("")
-}
+forestButton.onclick = function () {
+  forestModal.style.display = "block";
+  modalOverlay.style.display = "block";
+};
+
+span.onclick = function () {
+  forestModal.style.display = "none";
+  modalOverlay.style.display = "none";
+};

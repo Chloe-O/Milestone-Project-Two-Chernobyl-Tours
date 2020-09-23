@@ -23,7 +23,6 @@
     <nav>
       <a href="/index.html"><i class="fas fa-radiation-alt"></i></a>
       <a href="/index.html"><i class="fas fa-home"></i> Home</a>
-      <a href="/about.html"><i class="far fa-question-circle"></i> About</a>
       <a href="/contactus.html"><i class="fas fa-envelope"></i> Contact Us</a>
     </nav>
     <!--Page header-->
@@ -163,7 +162,7 @@
     <!---Modals-->
 
     <!--Reactor 4-->
-    <div class="modal" id="vidModal">
+    <div class="modal" id="reactorModal">
       <div class="modal-head">
         <span class="close">&times;</span>
         <br />
@@ -184,8 +183,24 @@
       </div>
     </div>
  
+<!--Red Forest-->
+
+ <div class="forest-modal" id="forestModal">
+      <div class="modal-head">
+        <span class="close">&times;</span>
+        <br />
+        <!--Floating the close button to the right made it overlap with the iframe, I was unsure how to resolve this so used br as a part fix-->
+      </div>
+
+      <div class="forest-content">
+        <div class="modal-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/KeSGSGX0P5A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+      </div>
+    </div>
+
 </div>
 
+<!--Modal overlay-->
 
     <div id="modal-overlay"></div>
     <script src="https://unpkg.com/@google/markerclustererplus@5.1.0/dist/markerclustererplus.min.js"></script>
