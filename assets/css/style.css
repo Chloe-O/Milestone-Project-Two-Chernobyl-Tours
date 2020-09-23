@@ -197,6 +197,14 @@ float: right;
 padding: 5px;
 }
 
+.forestClose {
+    color: #999999;
+  cursor: pointer;
+  font-size: 30px;
+float: right;
+padding: 5px;
+}
+
 .close:hover {
   color: #000;
 }

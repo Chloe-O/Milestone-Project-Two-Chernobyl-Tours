@@ -14,7 +14,6 @@ span.onclick = function () {
   reactorModal.style.display = "none";
   modalOverlay.style.display = "none";
 };
-
 /*Amusement Park*/
 
 let amusementButton = document.getElementById("amuseButton");
@@ -37,13 +36,14 @@ dugaButton.onclick = function () {
 
 let forestButton = document.getElementById("forestButton");
 let forestModal = document.getElementById("forestModal");
+let forestSpan = document.getElementsByClassName("forestClose")[0];
 
 forestButton.onclick = function () {
   forestModal.style.display = "block";
   modalOverlay.style.display = "block";
 };
 
-span.onclick = function () {
+forestSpan.onclick = function () {
   forestModal.style.display = "none";
   modalOverlay.style.display = "none";
 };
