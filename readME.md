@@ -69,7 +69,7 @@ As with my first milestone project, I had the same issue whereby, after deployme
 - [Font Awesome](https://fontawesome.com/) for icons used on the site
 - [Google Fonts](https://fonts.google.com/)
   Tim @ Code Institute for info regarding CSS Grid
-  [Wikipedia](https://www.wikipedia.com)Further information regarding Chernobyl and Pripyat
+  [Wikipedia](https://www.wikipedia.com) Further information regarding Chernobyl and Pripyat
 - [Weddev Simplified Youtube Channel](https://www.youtube.com/watch?v=MBaw_6cPmAw) Modal styling
   [Paper Crane](https://www.youtube.com/watch?v=X4t0JxiBeO0&t=239s) Video modal responsive styling
 
