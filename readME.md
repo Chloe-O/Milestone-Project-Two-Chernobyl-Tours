@@ -32,7 +32,7 @@ Languages and framework used for this site:
 
 ![Screenshot of Index Page from Huawei P20 Pro](./assets/readme-wireframe-images/Screenshot_20200923_204451_com.android.chrome.jpg)
 
-- I have run my code through HTML, CSS & JS validators with no serious issues
+- I have rectified a parse error with my HTML and removed the use of 'iframe border' from my CSS, now no errors are present when validating
 
 ![HTML validator](./assets/readme-wireframe-images/html-validated-no-errors.png)
 ![CSS validator](./assets/readme-wireframe-images/css-validated-no-errors.png)
@@ -43,9 +43,12 @@ Languages and framework used for this site:
 ## Bugs/Known Issues
 
 - When scrolling on index page, the Google map window would overlap the navbar. To resolve this, I added the Z-index property to the navbar so it appears in front of all the other elements on the page.
-- When opening the contact page, I found that the JS for the form submission was triggered as soon as the DOM loaded(and subsequently sending an empty email to my linked email.js account). However, an email was also sent when the form was completed and filled out. I was unable to resolve this, and after deployment, the contact page continues to send a blank email.js whenever the contact page is loaded.
+- When opening the contact page, I found that the JS for the form submission was triggered as soon as the DOM loaded(and subsequently sending an empty email to my linked email.js account). However, an email was also sent when the form was completed and filled out. I was unable to resolve this, and after deployment, the contact page continues to send a blank email.js whenever the contact page is loaded(I raised this with Code Institute but was unable to find a resolution to this.)
 - I was unable to get the 'x' button on the modal to align correctly within the container
 - The form on the contact page aligns to the centre of the page on smaller screens but sits to the left of the page on a large desktop. I spent a lot of time looking for a resolution and trying different properties to make them align centrally but was unable to achieve this, unfortunately
+- Following a FAIL result with my initial submission, my subscription to Google Platform has expired meaning the map on the page is greyed out - unfortunately, I cannot rectify this without paying for a subscription
+
+![Google Platfom Screenshot](./assets/readme-wireframe-images/google-platform-screenshot.png)
 
 ---
 
