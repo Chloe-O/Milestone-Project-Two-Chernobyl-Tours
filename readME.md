@@ -34,8 +34,8 @@ Languages and framework used for this site:
 
 - I have run my code through HTML, CSS & JS validators with no serious issues
 
-![HTML validator](./assets/readme-wireframe-images/html-validated-no-errors.PNG)
-![CSS validator](./assets/readme-wireframe-images/css-validated-no-errors.PNG)
+![HTML validator](./assets/readme-wireframe-images/html-validated-no-errors.png)
+![CSS validator](./assets/readme-wireframe-images/css-validated-no-errors.png)
 ![JS validator](./assets/readme-wireframe-images/js-validator.JPG)
 
 ---
