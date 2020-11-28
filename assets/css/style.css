@@ -88,10 +88,6 @@ nav a:hover {
   object-fit: cover;
 }
 
-button {
-  cursor: pointer;
-}
-
 /*Video iframe border*/
 iframe {
   border: 0;
@@ -238,6 +234,30 @@ input[type="submit"] {
   z-index: 2;
 }
 
+/*Buttons*/
+
+button {
+  cursor: pointer;
+}
+
+.next-btn {
+}
+
+/*Quiz page*/
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 5px;
+  margin: 20px 0;
+}
+
+.next-question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*Media queries*/
 
 /*Cards stack and border shows under each card*/
@@ -258,6 +278,14 @@ input[type="submit"] {
   .card-image {
     visibility: hidden;
     display: none;
+  }
+
+  /*Stacks answer buttons*/
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 5px;
+    margin: 20px 0;
   }
 }
 
