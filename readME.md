@@ -44,7 +44,11 @@ The purpose of the site is for a user to enquire about/ look to book a bespoke t
 
 ## Wireframes
 
-- Wireframe can be found [here](./wireframes/MS2 Mock up.pdf)
+- I have created wireframes showing desktop views of all the site's pages and showing the home page on a mobile phone and tablet sized display
+
+![Desktop wireframes](./assets/readme-wireframe-images/wireframes/homepage-wireframe-desktop.png)
+
+![Mobile wireframes](./assets/readme-wireframe-images/wireframes/mobile-wireframes.png)
 
 # Technologies Used
 
