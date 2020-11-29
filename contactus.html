@@ -14,11 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
       (function () {
         emailjs.init("user_9AQCkqhmimR1eVWv1ISKf");
         emailjs.send("0happysoup0@gmail.com", "template_yvvj9ks");
@@ -49,47 +46,47 @@
 
       <main>
         <div class="main-content">
-
           <div class="form">
-                      <h4>
-            Please complete the form below, we will be in touch as soon as
-            possible to start helping plan your next adventure!
-          </h4>
-          <form onsubmit="return sendMail(this);">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              name="visitorname"
-              id="name"
-              placeholder="Your Name"
-              required
-            /><br />
-            <label for="contact-number">Contact Number</label>
-            <input
-              type="text"
-              name="contact-number"
-              id="contactnumber"
-              placeholder="Your Contact Number"
-            />
-            <br />
-            <label for="email-address">Email Address</label>
-            <input
-              type="email"
-              name="email-address"
-              id="emailaddress"
-              placeholder="Your Email Address"
-              required
-            />
-            <label for="query">Booking Enquiry</label>
-            <textarea
-              name="query"
-              id="yourquery"
-              placeholder="Your query..."
-              required
-            ></textarea>
+            <h4>
+              Please complete the form below, we will be in touch as soon as
+              possible to start helping plan your next adventure!
+            </h4>
+            <form onsubmit="return sendMail(this);">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="visitorname"
+                id="name"
+                placeholder="Your Name"
+                required
+              /><br />
+              <label for="contactnumber">Contact Number</label>
+              <input
+                type="text"
+                name="contact-number"
+                id="contactnumber"
+                placeholder="Your Contact Number"
+              />
+              <br />
+              <label for="emailaddress">Email Address</label>
+              <input
+                type="email"
+                name="emailaddress"
+                id="emailaddress"
+                placeholder="Your Email Address"
+                required
+              />
+              <label for="query">Booking Enquiry</label>
+              <textarea
+                name="query"
+                id="query"
+                placeholder="Your query..."
+                required
+              ></textarea>
 
-            <input type="submit" value="Submit" />
-          </form>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
         </div>
       </main>
 
