@@ -255,19 +255,18 @@ button {
   margin: 20px 0;
 }
 
-.next-question {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /*correct and incorrect answer button colours*/
-.btn-correct {
-  background-color: rgb(109, 245, 109);
+.btn.correct {
+  background-color: rgb(149, 255, 149);
 }
 
-.btn-incorrect {
-  background-color: rgb(255, 104, 104);
+.btn.incorrect {
+  background-color: rgb(255, 168, 168);
+}
+
+/*Hides the start buttons before the quiz has started*/
+.hide {
+  display: none;
 }
 
 /*Media queries*/

@@ -1,20 +1,24 @@
+/*Variables for buttons, container and questions set */
 var startButton = document.getElementById("start-btn");
 var nextButton = document.getElementById("next-btn");
 var questionContainerElement = document.getElementById("question-container");
 var questionElement = document.getElementById("question");
 var answerButtonsElement = document.getElementById("answer-buttons");
 
-var shuffledQuestions, currentQuestion;
+var questionShuffle, currentQuestion;
 
+/*Event listener added, when start button is clicked, the quiz begins */
 startButton.addEventListener("click", startGame);
+/*When the next button is clicked, the next question is presented*/
 nextButton.addEventListener("click", () => {
   currentQuestion++;
   setNextQuestion();
 });
 
+/*Clicking start hides the start button and displays the questions in the question container, the items in the question array are shuffled so questions do not appear in the sme order each time the quiz is played*/
 function startGame() {
   startButton.classList.add("hide");
-  shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+  questionShuffle = questions.sort(() => Math.random() - 0.5);
   currentQuestion = 0;
   questionContainerElement.classList.remove("hide");
   setNextQuestion();
@@ -22,7 +26,7 @@ function startGame() {
 
 function setNextQuestion() {
   resetState();
-  showQuestion(shuffledQuestions[currentQuestion]);
+  showQuestion(questionShuffle[currentQuestion]);
 }
 
 function showQuestion(question) {
@@ -47,14 +51,14 @@ function resetState() {
   }
 }
 
-function selectAnswer(e) {
-  var selectedButton = e.target;
+function selectAnswer(i) {
+  var selectedButton = i.target;
   var correct = selectedButton.dataset.correct;
   setStatusClass(document.body, correct);
   Array.from(answerButtonsElement.children).forEach((button) => {
     setStatusClass(button, button.dataset.correct);
   });
-  if (shuffledQuestions.length > currentQuestion + 1) {
+  if (questionShuffle.length > currentQuestion + 1) {
     nextButton.classList.remove("hide");
   } else {
     startButton.innerText = "Restart";
@@ -67,16 +71,16 @@ function setStatusClass(element, correct) {
   if (correct) {
     element.classList.add("correct");
   } else {
-    element.classList.add("wrong");
+    element.classList.add("incorrect");
   }
 }
 
 function clearStatusClass(element) {
   element.classList.remove("correct");
-  element.classList.remove("wrong");
+  element.classList.remove("incorrect");
 }
 
-/* Quiz questions */
+/* Quiz questions set as an array*/
 
 var questions = [
   {
@@ -112,7 +116,7 @@ var questions = [
       "Which of the below sites contains the highest levels of radiation",
     answers: [
       { text: "Pripyat Amusement park", correct: false },
-      { text: "Duga Radar", correct: true },
+      { text: "Duga Radar", correct: false },
       { text: "Red Forest", correct: true },
       { text: "Kiev", correct: false },
     ],

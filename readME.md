@@ -106,6 +106,5 @@ I deployed the site using GitHub pages, with help from [GitHub Pages's guide](ht
 - Tim @ Code Institute for info regarding CSS Grid
 - [Wikipedia](https://www.wikipedia.com) Further information regarding Chernobyl and Pripyat
 - [Weddev Simplified Youtube Channel](https://www.youtube.com/watch?v=MBaw_6cPmAw) Modal styling
-  [Paper Crane](https://www.youtube.com/watch?v=X4t0JxiBeO0&t=239s) Video modal responsive styling
-
+- [Paper Crane](https://www.youtube.com/watch?v=X4t0JxiBeO0&t=239s) Video modal responsive styling
 ---
