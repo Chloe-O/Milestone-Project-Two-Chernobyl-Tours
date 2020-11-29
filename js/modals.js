@@ -1,9 +1,9 @@
 /*Reactor 4*/
 
-let reactorModal = document.getElementById("reactorModal");
-let modalOverlay = document.getElementById("modal-overlay");
-let cardButton = document.getElementById("reactorButton");
-let span = document.getElementsByClassName("close")[0];
+var reactorModal = document.getElementById("reactorModal");
+var modalOverlay = document.getElementById("modal-overlay");
+var cardButton = document.getElementById("reactorButton");
+var span = document.getElementsByClassName("close")[0];
 
 cardButton.onclick = function () {
   reactorModal.style.display = "block";
@@ -16,7 +16,7 @@ span.onclick = function () {
 };
 /*Amusement Park*/
 
-let amusementButton = document.getElementById("amuseButton");
+var amusementButton = document.getElementById("amuseButton");
 
 amusementButton.onclick = function () {
   window.open(
@@ -26,7 +26,7 @@ amusementButton.onclick = function () {
 
 /*Duga radar*/
 
-let dugaButton = document.getElementById("dugaButton");
+var dugaButton = document.getElementById("dugaButton");
 
 dugaButton.onclick = function () {
   window.open("https://en.wikipedia.org/wiki/Duga_radar#");
@@ -34,9 +34,9 @@ dugaButton.onclick = function () {
 
 /*Red forest*/
 
-let forestButton = document.getElementById("forestButton");
-let forestModal = document.getElementById("forestModal");
-let forestSpan = document.getElementsByClassName("forestClose")[0];
+var forestButton = document.getElementById("forestButton");
+var forestModal = document.getElementById("forestModal");
+var forestSpan = document.getElementsByClassName("forestClose")[0];
 
 forestButton.onclick = function () {
   forestModal.style.display = "block";

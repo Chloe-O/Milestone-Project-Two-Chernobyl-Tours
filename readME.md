@@ -57,11 +57,11 @@ Languages used for this site:
 ## Frameworks, Libraries & Programs Used
 
 1. [Google Fonts:](https://fonts.google.com/)
-   - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+   - Google fonts were used to import the Roboto font which is used throughout the site
 2. [Font Awesome:](https://fontawesome.com/)
-   - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+   - Font Awesome was used on all pages throughout the website to add icons to the page
 3. [GitHub:](https://github.com/)
-   - GitHub is used to store the project
+   - GitHub is used to store the project, GitHub pages was used to publish the site
 4. [Balsamiq:](https://balsamiq.com/)
    - Balsamiq was used to create the wireframes for the site
 
@@ -72,16 +72,40 @@ Languages used for this site:
 - Site is responsive on all device sizes, I have utilised media queries to acheive this
 - Interactive elements are impleted on the sites using JavaScript in the form of: modals, Google maps, a short quiz
 - Hovering over buttons and links provide visual feedback to the user
+- The quiz page randomises a set of questions and provided visual feedback in the form of red or green buttons depending on the whether the user chooses the correct answer
 
 ---
 
 # Testing
 
+## Code Validation
+
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-- [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
-- [JSHint Validator](https://jshint.com/) - [Results]()
+### HTML
+
+![Index Page](./assets/readme-wireframe-images/index-page-html-validated.PNG)
+![Quiz Page](./assets/readme-wireframe-images/faqs-page-html-validated.PNG)
+![Contact us Page](./assets/readme-wireframe-images/contact-page-html-validated.PNG)
+
+---
+
+### CSS
+
+![CSS](./assets/readme-wireframe-images/css-validated-no-errors.png)
+
+---
+
+### JavaScript
+
+![FAQS JavaScript]()
+![Map JavaScript]()
+![Modals JavaScript](./assets/readme-wireframe-images/modaljs-validation.JPG)
+![Emails JavaScript](./assets/readme-wireframe-images/sendemail-js-validated.PNG)
+
+- When validating the Javascript in sendEmail.js it warns that the variable 'sendMail' is unused, however the variable is used in the HTML on the contactus.html page
+
+![sendEmail JavaScript](./assets/readme-wireframe-images/sendemail-js-html.PNG)
 
 ## Testing User Stories from User Experience (UX) Section
 

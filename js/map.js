@@ -5,19 +5,9 @@ function initMap() {
     center: { lat: 51.394626, lng: 30.07513 },
   });
 
-  /*  const reactorFour = "<h3>REACTOR FOUR</h3>" + "<p>Reactor four ......</p>";
-  const amusementPark = "<h3>REACTOR FOUR</h3>" + "<p>Reactor four ......</p>";
-  const dugaRadar = "<h3>REACTOR FOUR</h3>" + "<p>Reactor four ......</p>";
-  const redForest = "<h3>REACTOR FOUR</h3>" + "<p>Reactor four ......</p>"; */
-
   var labels = "ABCD";
   var locations = [
-    {
-      title: "Reactor 4" /*May need to be removed*/,
-      lat: 51.389435,
-      lng: 30.099635,
-      description: "Description",
-    },
+    { lat: 51.389435, lng: 30.099635 },
     /*Reactor 4*/
     { lat: 51.408113, lng: 30.055636 },
     /*Pripyat Amusement park*/

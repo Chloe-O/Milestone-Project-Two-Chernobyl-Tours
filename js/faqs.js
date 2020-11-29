@@ -7,7 +7,7 @@ var answerButtonsElement = document.getElementById("answer-buttons");
 
 var questionShuffle, currentQuestion;
 
-/*Event listener added, when start button is clicked, the quiz begins */
+/*Event listener added, when start button is clicked, the quiz begins(startGame function is initiated) */
 startButton.addEventListener("click", startGame);
 /*When the next button is clicked, the next question is presented*/
 nextButton.addEventListener("click", () => {
@@ -15,7 +15,8 @@ nextButton.addEventListener("click", () => {
   setNextQuestion();
 });
 
-/*Clicking start hides the start button and displays the questions in the question container, the items in the question array are shuffled so questions do not appear in the sme order each time the quiz is played*/
+/*Clicking start hides the start button and displays the questions in the question container, the items in the question array are sorted and shuffled so questions do not appear in the same order each time the quiz is played over*/
+/*'currentQuestion' takes the first question at the beginning of the now shuffled array and 'questionContainerElement' removes the CSS property 'hide' so the first question is displayed in the browser*/
 function startGame() {
   startButton.classList.add("hide");
   questionShuffle = questions.sort(() => Math.random() - 0.5);
@@ -23,6 +24,8 @@ function startGame() {
   questionContainerElement.classList.remove("hide");
   setNextQuestion();
 }
+
+/*resetStates reverts browser to default state once the question has been answered*/
 
 function setNextQuestion() {
   resetState();
@@ -66,6 +69,8 @@ function selectAnswer(i) {
   }
 }
 
+/**/
+
 function setStatusClass(element, correct) {
   clearStatusClass(element);
   if (correct) {
@@ -75,12 +80,14 @@ function setStatusClass(element, correct) {
   }
 }
 
+/**/
+
 function clearStatusClass(element) {
   element.classList.remove("correct");
   element.classList.remove("incorrect");
 }
 
-/* Quiz questions set as an array*/
+/* Quiz questions set as an array, each contains a question and multiple possible answers assigned to either a true or false value*/
 
 var questions = [
   {
