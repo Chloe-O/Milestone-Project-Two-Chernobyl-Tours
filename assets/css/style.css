@@ -240,7 +240,10 @@ button {
   cursor: pointer;
 }
 
-.next-btn {
+.next-start-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Quiz page*/
@@ -256,6 +259,15 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*correct and incorrect answer button colours*/
+.btn-correct {
+  background-color: rgb(109, 245, 109);
+}
+
+.btn-incorrect {
+  background-color: rgb(255, 104, 104);
 }
 
 /*Media queries*/

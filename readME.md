@@ -12,29 +12,29 @@ For this project, I have used HTML, CSS & Javascript(and no external libraries/f
 
 I have tried to keep the site quite simple and 'straight forward', I feel the layout is self explanatory and easy to navigate. I have included properties such as a pointer cursor and hover over clickable buttons to provide visual feedback.
 
- ## First Time Visitor Goals
+## First Time Visitor Goals
 
 - Step 1
 
- ## Returning Time Visitor Goals
+## Returning Time Visitor Goals
 
 - Step 2
 
- ## Frequent Time Visitor Goals
+## Frequent Time Visitor Goals
 
 - Step 3
 
 # Design
 
- ## Colour Scheme
+## Colour Scheme
 
 - The colour scheme is black and white
 
- ## Typography
+## Typography
 
 - Roboto from Google Fonts is the font used throughout the site
 
- ## Imagery
+## Imagery
 
 - Images are used throughout the site with an image used as part of the page's header, this stands out against the white background
 
