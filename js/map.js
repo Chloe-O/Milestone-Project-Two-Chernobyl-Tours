@@ -1,4 +1,5 @@
-//Function shows marks 4 locations on the map, with the centre showing the general Chernobyl/Pripyat area
+//Function displays map from map API and shows 4 locations on the map which are determined below in an array, with the centre showing the general Chernobyl/Pripyat area, again the starting location is determined in an array
+
 function initMap() {
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 9,

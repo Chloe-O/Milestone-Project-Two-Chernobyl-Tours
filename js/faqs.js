@@ -4,22 +4,17 @@ var nextButton = document.getElementById("next-btn");
 var questionContainerElement = document.getElementById("question-container");
 var questionElement = document.getElementById("question");
 var answerButtonsElement = document.getElementById("answer-buttons");
-
 var questionShuffle, currentQuestion;
 
 /*Event listener added, when start button is clicked, the quiz begins(startGame function is initiated) */
 
 startButton.addEventListener("click", startGame);
 
-/*When the next button is clicked, the next question is presented*/
-
-nextButton.addEventListener("click", () => {
-  currentQuestion++;
-  setNextQuestion();
-});
-
 /*Clicking start hides the start button and displays the questions in the question container, the items in the question array are sorted and shuffled so questions do not appear in the same order each time the quiz is played over*/
+
 /*'currentQuestion' takes the first question at the beginning of the now shuffled array and 'questionContainerElement' removes the CSS property 'hide' so the first question is displayed in the browser*/
+
+/*currentQuestion starts at 0 index of */
 
 function startGame() {
   startButton.classList.add("hide");
@@ -29,14 +24,29 @@ function startGame() {
   setNextQuestion();
 }
 
-/*resetStates reverts browser to default state once the question has been answered*/
+/*When the next button is clicked, the next question is presented as currentQuestion interates through array*/
+
+nextButton.addEventListener("click", () => {
+  currentQuestion++;
+  setNextQuestion();
+});
+
+/*resetState function hides the next button until the user chooses an answer then hides the button again when the next question is populated */
 
 function setNextQuestion() {
   resetState();
   showQuestion(questionShuffle[currentQuestion]);
 }
 
-/**/
+function resetState() {
+  clearStatusClass(document.body);
+  nextButton.classList.add("hide");
+  while (answerButtonsElement.firstChild) {
+    answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+  }
+}
+
+/*Takes a question and adds buttons to browser, each is populated with one of the answers from the question array */
 
 function showQuestion(question) {
   questionElement.innerText = question.question;
@@ -52,17 +62,7 @@ function showQuestion(question) {
   });
 }
 
-/**/
-
-function resetState() {
-  clearStatusClass(document.body);
-  nextButton.classList.add("hide");
-  while (answerButtonsElement.firstChild) {
-    answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-  }
-}
-
-/**/
+/*Checks whether the answer the user has clicked on is correct(true or false), */
 
 function selectAnswer(i) {
   var selectedButton = i.target;
@@ -79,7 +79,7 @@ function selectAnswer(i) {
   }
 }
 
-/**/
+/*Checks whether answr is correct, adds the 'correct' class if answer is correct otherwise adds the 'incorrect' class*/
 
 function setStatusClass(element, correct) {
   clearStatusClass(element);
