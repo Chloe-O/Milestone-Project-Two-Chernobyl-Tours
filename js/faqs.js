@@ -14,7 +14,7 @@ startButton.addEventListener("click", startGame);
 
 /*'currentQuestion' takes the first question at the beginning of the now shuffled array and 'questionContainerElement' removes the CSS property 'hide' so the first question is displayed in the browser*/
 
-/*currentQuestion starts at 0 index of */
+/*currentQuestion starts at 0 index of question array */
 
 function startGame() {
   startButton.classList.add("hide");
@@ -39,7 +39,6 @@ function setNextQuestion() {
 }
 
 function resetState() {
-  clearStatusClass(document.body);
   nextButton.classList.add("hide");
   while (answerButtonsElement.firstChild) {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild);
@@ -62,12 +61,9 @@ function showQuestion(question) {
   });
 }
 
-/*Checks whether the answer the user has clicked on is correct(true or false), */
+/*Checks whether the answer the user has clicked on is correct(true or false), goes to next question and hides next question or changes button to restart*/
 
 function selectAnswer(i) {
-  var selectedButton = i.target;
-  var correct = selectedButton.dataset.correct;
-  setStatusClass(document.body, correct);
   Array.from(answerButtonsElement.children).forEach((button) => {
     setStatusClass(button, button.dataset.correct);
   });
@@ -79,7 +75,7 @@ function selectAnswer(i) {
   }
 }
 
-/*Checks whether answr is correct, adds the 'correct' class if answer is correct otherwise adds the 'incorrect' class*/
+/*Checks whether answer is correct, adds the 'correct' class if answer is correct otherwise adds the 'incorrect' class*/
 
 function setStatusClass(element, correct) {
   clearStatusClass(element);
@@ -89,8 +85,6 @@ function setStatusClass(element, correct) {
     element.classList.add("incorrect");
   }
 }
-
-/**/
 
 function clearStatusClass(element) {
   element.classList.remove("correct");

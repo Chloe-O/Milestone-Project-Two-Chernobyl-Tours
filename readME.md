@@ -102,8 +102,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### JavaScript
 
-![FAQS JavaScript]()
-![Map JavaScript]()
+![FAQS JavaScript](./assets/readme-wireframe-images/faqsjs-validated.JPG)
+
+- When putting mapjs file through JSHint I get warnings for unused variables though the variables are present on the index page
+
+![Map JavaScript](./assets/readme-wireframe-images/mapjs-validated.JPG)
 ![Modals JavaScript](./assets/readme-wireframe-images/modaljs-validation.JPG)
 ![Emails JavaScript](./assets/readme-wireframe-images/sendemail-js-validated.PNG)
 
