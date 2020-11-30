@@ -8,8 +8,11 @@ var answerButtonsElement = document.getElementById("answer-buttons");
 var questionShuffle, currentQuestion;
 
 /*Event listener added, when start button is clicked, the quiz begins(startGame function is initiated) */
+
 startButton.addEventListener("click", startGame);
+
 /*When the next button is clicked, the next question is presented*/
+
 nextButton.addEventListener("click", () => {
   currentQuestion++;
   setNextQuestion();
@@ -17,6 +20,7 @@ nextButton.addEventListener("click", () => {
 
 /*Clicking start hides the start button and displays the questions in the question container, the items in the question array are sorted and shuffled so questions do not appear in the same order each time the quiz is played over*/
 /*'currentQuestion' takes the first question at the beginning of the now shuffled array and 'questionContainerElement' removes the CSS property 'hide' so the first question is displayed in the browser*/
+
 function startGame() {
   startButton.classList.add("hide");
   questionShuffle = questions.sort(() => Math.random() - 0.5);
@@ -32,6 +36,8 @@ function setNextQuestion() {
   showQuestion(questionShuffle[currentQuestion]);
 }
 
+/**/
+
 function showQuestion(question) {
   questionElement.innerText = question.question;
   question.answers.forEach((answer) => {
@@ -46,6 +52,8 @@ function showQuestion(question) {
   });
 }
 
+/**/
+
 function resetState() {
   clearStatusClass(document.body);
   nextButton.classList.add("hide");
@@ -53,6 +61,8 @@ function resetState() {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild);
   }
 }
+
+/**/
 
 function selectAnswer(i) {
   var selectedButton = i.target;

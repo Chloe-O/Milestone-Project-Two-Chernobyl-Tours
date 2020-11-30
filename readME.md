@@ -144,10 +144,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 # Bugs/Known Issues
 
-- When scrolling on index page, the Google map window would overlap the navbar. To resolve this, I added the Z-index property to the navbar so it appears in front of all the other elements on the page.
 - When opening the contact page, I found that the JS for the form submission was triggered as soon as the DOM loaded(and subsequently sending an empty email to my linked email.js account each time the page is opened). However, an email was also sent when the form was completed and filled out. I was unable to resolve this, and after deployment, the contact page continues to send a blank email.js whenever the contact page is loaded(I raised this with Code Institute but was unable to find a resolution to this)
-- I was unable to get the 'x' button on the modal to align correctly within the container
-- The form on the contact page aligns to the centre of the page on smaller screens but sits to the left of the page on a large desktop. I spent a lot of time looking for a resolution and trying different properties to make them align centrally but was unable to achieve this, unfortunately
 - Following my initial submission, my subscription to Google Platform has expired meaning the map on the page is greyed out - unfortunately, I cannot rectify this without paying for a subscription
 
 ![Google Platfom Screenshot](./assets/readme-wireframe-images/google-platform-screenshot.png)
@@ -156,6 +153,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - I have rectified a parse error with my HTML and removed the use of 'iframe border' from my CSS, HTML and CSS both pass through validators with no errors
 - Google maps was overlapping the navigation bar when scrolling to the bottom of the index page, adding a Z-index to the navigation bar rectified this
+- When testing the quiz, I found I had accidentally set the value of two of the answers to 'true' though there is only one correct answer per question - this was easily rectified by changing the value of the incorrect answer to 'false'
+
+![Testing Quiz](./assets/readme-wireframe-images/quiz-testing.JPG)
 
 # Deployment
 
