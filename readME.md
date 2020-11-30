@@ -75,7 +75,7 @@ Languages used for this site:
 
 - Site is responsive on all device sizes, I have utilised media queries to acheive this
 - Interactive elements are impleted on the site using JavaScript in the form of: modals, Google maps, a short quiz
-- Hovering over buttons and links provide visual feedback to the user
+- Hovering over buttons and links provide visual feedback to the user 
 - The quiz page randomises a set of questions and provided visual feedback in the form of red or green buttons depending on the whether the user chooses the correct answer
 
 ---
